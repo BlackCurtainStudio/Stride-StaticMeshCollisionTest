@@ -1,0 +1,68 @@
+!Model
+Id: a3935a03-5a4b-462e-9314-79316137bb33
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../SectionTest.FBX
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    056639c895f6d806a6937f8094a446d9:
+        Name: floor3
+        MaterialInstance:
+            Material: null
+    cea23df6f9f3d439e351b82df48b2f85:
+        Name: wood
+        MaterialInstance:
+            Material: null
+    ab2dc0744c08e56b3b887234bb9d2a42:
+        Name: ceiling
+        MaterialInstance:
+            Material: null
+    91c93d44dea73c00d1cf47fc0111c6a2:
+        Name: white_diffuse
+        MaterialInstance:
+            Material: null
+    dd01cf8de52d679908accaafb6731558:
+        Name: lightswitch
+        MaterialInstance:
+            Material: null
+    b5d23f8df2aca5cdb170c09d3e6fcad2:
+        Name: window_inner_seal
+        MaterialInstance:
+            Material: null
+    52a30e7353bb4161922d408266fa7b1e:
+        Name: tile
+        MaterialInstance:
+            Material: null
+    9bbe0242a5c1ea8fcc56c83551ab8480:
+        Name: wood4
+        MaterialInstance:
+            Material: null
+    a4a11d201a6d02e3c58b0cfd36b62475:
+        Name: wall2
+        MaterialInstance:
+            Material: null
+    4bde44b0f65cea2b8f7938fbaa63a4c0:
+        Name: marble
+        MaterialInstance:
+            Material: null
+    dfe55365aee5b33fa92936baa23b4c22:
+        Name: white_tile1
+        MaterialInstance:
+            Material: null
+    b1aa04acb6c519dc6f08b6d0812f181c:
+        Name: chrome
+        MaterialInstance:
+            Material: null
+    4cc5ddfe721b7e7391d4821b0bdc1e64:
+        Name: wall1
+        MaterialInstance:
+            Material: null
+    82bad3f3e732fd0f530e17a720a1aaf3:
+        Name: orange_tile
+        MaterialInstance:
+            Material: null
+DeduplicateMaterials: false
+Modifiers: {}
+~SourceHashes:
+    f5382b102fe6b54d86a495db1e776c81~../../../SectionTest.FBX: 49cd449bd062d8a3e3048352ad208904

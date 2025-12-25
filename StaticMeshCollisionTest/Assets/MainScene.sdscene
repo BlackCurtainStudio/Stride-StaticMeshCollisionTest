@@ -1,0 +1,121 @@
+!SceneAsset
+Id: cdd4c4a6-1879-434d-bb19-eadebb58e775
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! 742610c8-9a63-44ef-8021-a484b6610ae0
+        - ref!! a3dd157f-6bb7-4c6c-b658-62c56ea2e769
+        - ref!! 720623db-5c6e-4bc5-955e-64bb5553b2a2
+        - ref!! 7dfcb70f-4e74-467d-9ce3-1cf904137936
+        - ref!! dff8f4cf-eb28-4873-9328-ac1c48cdf4ad
+    Parts:
+        -   Entity:
+                Id: 720623db-5c6e-4bc5-955e-64bb5553b2a2
+                Name: Skybox
+                Components:
+                    b9b6c9b3279300670db6e382fae665c4: !TransformComponent
+                        Id: e4d783ea-a123-426a-b134-9c8d32c47b80
+                        Position: {X: 0.0, Y: 2.0, Z: -2.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    541d5eb86f3c950ba9d26a58fcb019e9: !BackgroundComponent
+                        Id: 77e3bddb-c8f1-41c5-8565-3b5d4bd7b156
+                        Texture: fd9a17df-24e1-46cc-b566-c7a1885add3c:Skybox texture
+                    a02410f125e32eaa7b23e9d6ef0cb2fb: !LightComponent
+                        Id: 0acb634a-e952-4e10-ad3a-5aa2f9f0f40a
+                        Type: !LightSkybox
+                            Skybox: 9e300998-5fab-49ed-b77d-3b159d20be70:Skybox
+                        Intensity: 2.0
+        -   Entity:
+                Id: 742610c8-9a63-44ef-8021-a484b6610ae0
+                Name: Camera
+                Components:
+                    fb0a0ea404f3b0a88c4c8fb43d722fd4: !TransformComponent
+                        Id: 5bea112a-e974-4a50-86ed-7b04248e5644
+                        Position: {X: 2.6, Y: 0.6, Z: -1.0}
+                        Rotation: {X: 0.0, Y: 0.82903755, Z: 0.0, W: 0.5591929}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    e890497f57763b29f1053a978f5301fe: !CameraComponent
+                        Id: cedf1b34-70d0-4dc7-87ca-10cb0d25f51a
+                        Name: null
+                        Projection: Perspective
+                        Slot: f6be52fc-e40e-4bf2-a3db-9c65e6191e0a
+                    108779b9b9977ca875f85ea7c018963e: !StaticMeshCollisionTest.BasicCameraController,StaticMeshCollisionTest
+                        Id: b4dfbdbd-6eab-4f8d-9203-719239a15268
+                        Gamepad: false
+                        KeyboardMovementSpeed: {X: 5.0, Y: 5.0, Z: 5.0}
+                        TouchMovementSpeed: {X: 0.7, Y: 0.7, Z: 0.3}
+                        SpeedFactor: 5.0
+                        KeyboardRotationSpeed: {X: 3.0, Y: 3.0}
+                        MouseRotationSpeed: {X: 1.0, Y: 1.0}
+                        TouchRotationSpeed: {X: 1.0, Y: 0.7}
+        -   Entity:
+                Id: 7dfcb70f-4e74-467d-9ce3-1cf904137936
+                Name: Sphere
+                Components:
+                    c49a3fbe63be02f1cd5faac1fa5558b9: !TransformComponent
+                        Id: f7df4545-cb35-4a52-97a3-e098d200419f
+                        Position: {X: 0.0, Y: 0.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    8c5e536dceda32b9d092b13969b10d11: !ModelComponent
+                        Id: 0385f31d-d9df-4d95-8f70-1dadb12b152c
+                        Model: 475385fb-24f7-44bf-abe8-610096a1d098:Sphere
+                        Materials: {}
+        -   Entity:
+                Id: a3dd157f-6bb7-4c6c-b658-62c56ea2e769
+                Name: Directional light
+                Components:
+                    530e5fc719cfe13e03e4d6a066142e7c: !TransformComponent
+                        Id: ce82edd1-dfa7-4156-91ca-d3254febe8e5
+                        Position: {X: 0.0, Y: 4.5548162, Z: 0.0}
+                        Rotation: {X: 0.1262568, Y: -0.57404983, Z: -0.090147525, W: -0.80398965}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    017ad5831ba145eb6fca7ed908a00021: !LightComponent
+                        Id: e4bfd087-f905-41ca-bf12-757359c5bd90
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Filter: !LightShadowMapFilterTypePcf
+                                    FilterSize: Filter5x5
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 5.0
+        -   Entity:
+                Id: dff8f4cf-eb28-4873-9328-ac1c48cdf4ad
+                Name: SectionTest
+                Components:
+                    433c86251db18f36b06da0c8d25eadea: !TransformComponent
+                        Id: e28ee1c7-27c6-48ac-9038-e95d4038cd53
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    b78f4f231f75d7f9ae47615cba92c28b: !ModelComponent
+                        Id: 12d4a267-12d1-4d19-a4fc-d064b6b0073c
+                        Model: a3935a03-5a4b-462e-9314-79316137bb33:SectionTest
+                        Materials: {}
+                    f7667b64ace65a95c121d288f6c88545: !StaticColliderComponent
+                        Id: 789be215-4f3c-42ab-919f-fde886b059ed
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            a1ad2a175b6e65c17b3a2e470fd11221: !StaticMeshColliderShapeDesc
+                                Model: a3935a03-5a4b-462e-9314-79316137bb33:SectionTest
